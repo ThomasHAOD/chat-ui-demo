@@ -1,0 +1,53 @@
+@import '../../../sass/settings.scss';
+
+.ImageIndicator {
+  display: flex;
+  flex-flow: row;
+  margin: rem(10) 0;
+}
+
+.ImageIndicator img {
+  margin: rem(5);
+  height: rem(40);
+}
+
+.TypingIndicator {
+  background-color: $light-grey;
+  will-change: transform;
+  width: fit-content;
+  border-radius: rem(10);
+  padding: rem(10);
+  display: table;
+  margin: rem(10);
+  margin-left: rem(12);
+  position: relative;
+  animation: 2s bulge infinite ease-out;
+  span {
+    height: rem(10);
+    width: rem(10);
+    float: left;
+    margin: rem(15);
+    background-color: $white;
+    display: block;
+    border-radius: 50%;
+    opacity: 0.5;
+    @for $i from 1 through 3 {
+      &:nth-of-type(#{$i}) {
+        animation: 1s bob infinite ($i * 0.3333s);
+      }
+    }
+  }
+}
+
+@keyframes bob {
+  50% {
+    opacity: 1;
+    transform: translateY(rem(-5));
+  }
+}
+
+@keyframes bulge {
+  50% {
+    transform: scale(1.10);
+  }
+}

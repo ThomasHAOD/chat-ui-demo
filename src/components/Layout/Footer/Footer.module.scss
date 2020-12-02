@@ -1,0 +1,16 @@
+@import "../../../sass/settings.scss";
+
+.Footer {
+  display: none;
+
+  @include media(small) {
+    display: flex;
+    position: fixed;
+    height: 17vh;
+    bottom: 0;
+    background-color: $primary;
+    width: 100%;
+    color: $white;
+    z-index: -300;
+  }
+}

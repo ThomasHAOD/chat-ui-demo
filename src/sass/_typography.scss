@@ -1,0 +1,19 @@
+@import "./breakpoints";
+
+$font-sizes-default: (
+  small: 16px,
+  medium: 16px,
+  large: 16px,
+);
+
+$typography-default: (
+  font-family: "Calibri",
+  font-size: 16px,
+  line-height: 16px,
+);
+
+$typography: (
+  default: (
+    $typography-default,
+  ),
+);

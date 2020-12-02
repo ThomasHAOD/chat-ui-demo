@@ -1,0 +1,5 @@
+{
+  "hooks": {
+    "pre-commit": "CI=true yarn test && yarn lint --fix"
+  }
+}

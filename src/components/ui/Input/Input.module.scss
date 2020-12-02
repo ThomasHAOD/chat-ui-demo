@@ -1,0 +1,8 @@
+@import '../../../sass/settings.scss';
+
+.InputContainer {
+    flex-grow: 4;
+    margin: rem(10);
+    height: fit-content;
+    color: $black;
+}

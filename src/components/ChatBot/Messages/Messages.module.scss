@@ -1,0 +1,12 @@
+@import '../../../sass/settings.scss';
+
+.Messages {
+  height: calc(100% - 220px);
+  width: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  display: block;
+  flex-flow: column;
+  box-sizing: border-box;
+}

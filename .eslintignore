@@ -1,0 +1,7 @@
+**/*.png
+**/*.jpg
+**/*.css
+**/*.scss
+**/node_modules
+**/cypress
+serviceworker.ts

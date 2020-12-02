@@ -1,0 +1,27 @@
+@import '../../../sass/settings.scss';
+
+.Header {
+    height: rem(50);
+    width: 100%;
+    color: $black;
+    background-color: $white;
+    display: flex;
+    box-shadow: 0 1px 10px $dark-grey;
+    position: relative;
+    z-index: 100;
+
+    & img {
+        position: absolute;
+        top: rem(3);
+        right: rem(3);
+        width: rem(90);
+    }
+
+    & h1 {
+        margin: auto;
+    }
+
+    @include media(small) {
+        border-radius: rem(30) rem(30) 0 0;
+    }
+}

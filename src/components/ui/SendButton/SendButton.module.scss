@@ -1,0 +1,12 @@
+@import "../../../sass/settings.scss";
+
+.SendIcon {
+  height: rem(40);
+  width: rem(40);
+  margin: rem(10);
+  background: $secondary;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
