@@ -1,11 +1,4 @@
-### Young Scot Chatbot (BletherBot) Front End
-
-This client communicates with the Azure Bot Service through the Direct Line (v3) API.
-
-The main technologies used are:
-- ReactJS
-- TypeScript
-- Microsoft Bot Framework Direct Line JS Client (https://www.npmjs.com/package/botframework-directlinejs)
+### React-Typescript Chat UI
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
