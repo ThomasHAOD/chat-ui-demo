@@ -2,11 +2,10 @@ import React, { useState, useRef } from 'react';
 import ChatWindow from './ChatWindow/ChatWindow';
 // import Messages from './Messages/Messages';
 import classes from './ChatBot.module.scss';
-import {Message} from '../../types';
 
 const ChatBot = () => {
 
-  const [messageHistory, setMessageHistory] = useState<Message[]>([]);
+  const [messageHistory, setMessageHistory] = useState([]);
   const [typing, setTyping] = useState(false);
 
   const dummy = useRef<HTMLDivElement>(null);
