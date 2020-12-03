@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import ChatWindow from './ChatWindow/ChatWindow';
-// import Messages from './Messages/Messages';
+import Messages from './Messages/Messages';
 import classes from './ChatBot.module.scss';
 
 const ChatBot = () => {
@@ -18,7 +18,7 @@ const ChatBot = () => {
     setTyping(true);
 
     setTimeout(() => {
-    const newerMessageHistory = [...newMessageHistory, {message: "This is my response to your message", user:"Tam"}];
+    const newerMessageHistory = [...newMessageHistory, {text: "This is my response to your message", user:"Tam"}];
     setMessageHistory(newerMessageHistory);
     setTyping(false);
     }, 3000);
@@ -28,7 +28,7 @@ const ChatBot = () => {
     <div className={classes.ChatBot} >
       <ChatWindow handleMessage={handleMessage} scrollToBottom={scrollToBottom}
       >
-        {/* <Messages messageHistory={messageHistory} typing={typing} dummy={dummy} /> */}
+        <Messages messageHistory={messageHistory} typing={typing} dummy={dummy} />
       </ChatWindow>
     </div>
   );
