@@ -12,7 +12,7 @@ const ChatBot = () => {
 
   const scrollToBottom = () => dummy.current?.scrollIntoView({ behavior: 'smooth' });
 
-  const handleMessage = (message: Message) => {
+  const handleMessage = (message) => {
     const newMessageHistory = [...messageHistory, message];
     setMessageHistory(newMessageHistory);
     setTyping(true);
